@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en-AU">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light">
+    <title>Wallbeds Australia Product Browser</title>
+    <meta name="description" content="A mobile-friendly product browser for WallBeds Australia products with prices, categories, and official product links.">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="wrap header-grid">
+        <div>
+          <p class="eyebrow">Unofficial catalogue</p>
+          <h1>Wallbeds Australia products</h1>
+          <p class="lede">Readable product cards with large tap targets and direct links to the official shop pages.</p>
+        </div>
+        <a class="official-link" href="https://www.wallbedsaustralia.com.au/shop/" rel="noopener">Official shop</a>
+      </div>
+    </header>
+
+    <main class="wrap">
+      <section class="controls" aria-label="Product filters">
+        <label class="search-label" for="search">Search products</label>
+        <input id="search" type="search" autocomplete="off" placeholder="Search by name, category, or option">
+        <div class="filter-row" id="categoryFilters" aria-label="Categories"></div>
+        <p class="result-count" id="resultCount" aria-live="polite"></p>
+      </section>
+
+      <section class="product-grid" id="products" aria-label="Products"></section>
+    </main>
+
+    <footer class="wrap footer">
+      <p>Product data is sourced from WallBeds Australia public product pages. Prices and availability can change; use the official product link to confirm before ordering.</p>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
